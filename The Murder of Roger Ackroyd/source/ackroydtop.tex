@@ -1,0 +1,111 @@
+\documentclass[
+%a5paper,
+paper=5.5in:8.5in,
+]{scrbook} % Document font size and paper size
+
+\title{The Murder of Roger Ackroyd}
+
+\usepackage[namedChapters]{bindery}
+\usepackage{dropcaps}
+\usepackage{illustrations}
+
+
+\setdefaultlanguage[variant=uk]{english}
+\setotherlanguage{french}
+
+\setdropcaps{Decocaps.ttf}
+
+
+\BeforeTOCHead[toc]{%
+  \KOMAoptions{parskip=false}% no parskip in ToC
+%  \RedeclareSectionCommand[afterskip=1sp minus 1sp]{chapter}% no skip after ToC title
+\DeclareTOCStyleEntry[beforeskip=0.5cm,entryformat=\chapterfont,linefill=\TOCLineLeaderFill]{chapter}{chapter}
+}
+\hyphenation{}
+
+
+\begin{document}
+
+
+
+
+\frontmatter
+\includepdf[width=\basicwidth]{titlepage.jpg}
+\KOMAoptions{headings=openleft}
+\pagestyle{plain}
+\tableofcontents
+\clearpage
+
+
+\mainmatter
+\pagestyle{headings}
+\renewcommand*{\chapterpagestyle}{plain}
+
+\KOMAoptions{headings=openright}
+\include{chapters/01.tex}
+\include{chapters/02.tex}
+\include{chapters/03.tex}
+\include{chapters/04.tex}
+\include{chapters/05.tex}
+\include{chapters/06.tex}
+\include{chapters/07.tex}
+\include{chapters/08.tex}
+\include{chapters/09.tex}
+\include{chapters/10.tex}
+\include{chapters/11.tex}
+\include{chapters/12.tex}
+\include{chapters/13.tex}
+\include{chapters/14.tex}
+\include{chapters/15.tex}
+\include{chapters/16.tex}
+\include{chapters/17.tex}
+\include{chapters/18.tex}
+\include{chapters/19.tex}
+\include{chapters/20.tex}
+\include{chapters/21.tex}
+\include{chapters/22.tex}
+\include{chapters/23.tex}
+\include{chapters/24.tex}
+\include{chapters/25.tex}
+\include{chapters/26.tex}
+\include{chapters/27.tex}
+
+\clearpage
+\KOMAoptions{headings=openleft}
+\chapter*{Colophon}
+
+
+\centering
+\begin{minipage}{\textwidth}
+\textit{The Murder of Roger Ackroyd,} originally serialised in the \textit{London Evening News} (as \textit{Who Killed Ackroyd?}) during the summer of 1925, was published as a standalone work by  William Collins, Sons in London (UK) in June 1926. It was the sixth novel by British author Agatha Christie (1890--1976). In 2013, the British Crime Writers' Association voted it the best crime novel ever. 
+\end{minipage}
+\vfill
+gutenberg.org/ebooks/69087
+\vfill
+\divider
+\vfill
+\begin{minipage}{\textwidth}
+Text is set in <EB Garamond,> Georg Mayr-Duffner's free and open source implementation of Claude Garamond’s famous humanist typefaces from the mid-16th century.  Chapter dropcaps are set in <Deco Caps>, by Petra Heidorn. Title page is set in <Riesling,> by Bright Ideas Foundry.
+\end{minipage}
+\vfill
+ github.com/georgd/EB-Garamond\\fontspace.com/cybapee-creations
+ \vfill
+\divider
+\vfill
+\begin{minipage}{\textwidth}
+Title page illustration is by <Sem,> the pen name of French artist Georges Goursat (1863--1934), and was originally published in 1927, as one of a set of illustrations for a special edition of Georges Courteline's 1898  satirical novel \textit{Messieurs les ronds-de-cuir} (\textit{The Bureaucrats}).
+\end{minipage}
+\vfill
+\divider
+\vfill
+\begin{minipage}{\textwidth}
+This typeset is dedicated to the public domain under a Creative Commons CC0 1.0 Universal deed. 
+\end{minipage}
+\vfill
+creativecommons.org/publicdomain/zero/1.0/
+\vfill
+\divider
+\vfill
+Typeset in \LaTeX{}. Last revised \today.
+\thispagestyle{empty}
+\end{document}
