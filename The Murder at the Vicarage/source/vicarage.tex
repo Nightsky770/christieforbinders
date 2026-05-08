@@ -1,0 +1,116 @@
+\documentclass[
+paper=5.5in:8.5in,
+%a5paper,
+]{scrbook} 
+
+\title{The Murder at the Vicarage}
+
+\usepackage{bindery}
+\usepackage{epistolary}
+\usepackage{dropcaps}
+\usepackage{illustrations}
+
+\setdropcaps{Decocaps.ttf}
+
+\BeforeTOCHead[toc]{%
+  \KOMAoptions{parskip=false}%
+\DeclareTOCStyleEntry[beforeskip=0.4cm,linefill=\TOCLineLeaderFill,entrynumberformat=\hideentrynumber]{chapter}{chapter}
+}
+
+
+
+
+\begin{document}
+\frontmatter
+\includepdf[width=\basicwidth]{titlepage.jpg}
+ \KOMAoptions{headings=openleft}
+ \pagestyle{plain}
+\tableofcontents
+% \listoffigures
+\chapter*{}
+\vspace*{5em}
+{\Large\noindent\itshape To Rosalind}
+\vfill
+\thispagestyle{empty}
+
+\mainmatter
+\pagestyle{headings}
+\KOMAoptions{headings=openright}
+
+\include{chapters/01.tex}
+\include{chapters/02.tex}
+\include{chapters/03.tex}
+\include{chapters/04.tex}
+\include{chapters/05.tex}
+\include{chapters/06.tex}
+\include{chapters/07.tex}
+\include{chapters/08.tex}
+\include{chapters/09.tex}
+\include{chapters/10.tex}
+\include{chapters/11.tex}
+\include{chapters/12.tex}
+\include{chapters/13.tex}
+\include{chapters/14.tex}
+\include{chapters/15.tex}
+\include{chapters/16.tex}
+\include{chapters/17.tex}
+\include{chapters/18.tex}
+\include{chapters/19.tex}
+\include{chapters/20.tex}
+\include{chapters/21.tex}
+\include{chapters/22.tex}
+\include{chapters/23.tex}
+\include{chapters/24.tex}
+\include{chapters/25.tex}
+\include{chapters/26.tex}
+\include{chapters/27.tex}
+\include{chapters/28.tex}
+\include{chapters/29.tex}
+\include{chapters/30.tex}
+\include{chapters/31.tex}
+\include{chapters/32.tex}
+
+\KOMAoptions{headings=openright}
+
+%
+\KOMAoptions{headings=openleft}
+\chapter*{Colophon}
+
+\centering
+
+\vfill
+\begin{minipage}{\textwidth}
+\workname{The Murder at the Vicarage} was originally published in 1930 by Collins Crime Club in London (UK) and by Dodd, Mead \& Co. in New York (US).  It was the tenth novel by British author Agatha Christie (1890--1976), and the first to feature detective Miss Marple.
+
+Illustrations are from the 1930 US publication. No artist credit was given in the original. Grateful acknowledgment is made to the Internet Archive, which in 2025 digitised a copy of this edition belonging to the Boston Public Library.
+\end{minipage}
+\vfill
+gutenberg.org/ebooks/78220
+\vfill
+\divider
+\vfill
+\begin{minipage}{\textwidth}
+Text is set in <EB Garamond,> Georg Mayr-Duffner's free and open source implementation of Claude Garamond’s famous humanist typefaces from the mid-sixteenth century.
+
+Title page is set in <Jeepers,> by Nick Curtis, based on a 1924 poster. Chapter dropcaps are set in <Deco Caps>, by Petra Heidorn. The newspaper article in chapter 22 is set in <Gillius,> by Arkandis Digital Foundry.
+\end{minipage}
+\vfill
+github.com/georgd/EB-Garamond\\fontspace.com/cybapee-creations\\nicksfonts.com\\arkandis.tuxfamily.org/adffonts.html
+\vfill
+\divider
+\vfill
+\begin{minipage}{\textwidth}
+Title page decoration is taken from an advertisement that appeared in a 1908 edition of the German magazine \workname{Berliner Illustrirte Zeitung.} No artist credit was given in the original.
+\end{minipage}
+\vfill
+\divider
+\vfill
+\begin{minipage}{\textwidth}
+This typeset is dedicated to the public domain under a Creative Commons CC0 1.0 Universal deed: creativecommons.org/publicdomain/zero/1.0/\\
+\end{minipage}
+\vfill
+\divider
+\vfill
+Typeset in \LaTeX{}. Last revised \today.
+\thispagestyle{empty}
+\end{document}
